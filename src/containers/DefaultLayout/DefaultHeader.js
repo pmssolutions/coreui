@@ -28,8 +28,8 @@ class DefaultHeader extends Component {
         <AppSidebarToggler className="d-md-down-none" display="lg" />
 
         <Nav className="d-md-down-none" navbar>
-          <NavItem className="px-3">
-            <NavLink href="/">Dashboard</NavLink>
+          {/* <NavItem className="px-3">
+            <NavLink href="#/">Dashboard</NavLink>
           </NavItem>
           <NavItem className="px-3">
             <NavLink href="#/users">Users</NavLink>
@@ -37,22 +37,74 @@ class DefaultHeader extends Component {
           <NavItem className="px-3">
             <NavLink href="#">Settings</NavLink>
           </NavItem>
+          <NavItem className="px-3">
+            <NavLink href="#">Aktivitas</NavLink>
+          </NavItem> */}
+          <NavItem>
+            <NavLink href="#/" className="px-3"><i className="icon-speedometer"></i> Dashboard</NavLink>
+          </NavItem>
+          <AppHeaderDropdown direction="down" className="px-3">
+            <DropdownToggle nav><i className="icon-calendar"></i> Calendar</DropdownToggle>
+            <DropdownMenu left style={{ left: 'auto' }}>
+              <DropdownItem>Leave</DropdownItem>
+              <DropdownItem>Attendance</DropdownItem>
+              <DropdownItem>Overtime</DropdownItem>
+            </DropdownMenu>
+          </AppHeaderDropdown>
+          <AppHeaderDropdown direction="down" className="px-3">
+            <DropdownToggle nav><i className="icon-wallet"></i> Financial</DropdownToggle>
+            <DropdownMenu left style={{ left: 'auto' }}>
+              <DropdownItem>Claim</DropdownItem>
+              <DropdownItem>Allowance</DropdownItem>
+              <DropdownItem>Unfixed Income</DropdownItem>
+              <DropdownItem>Payroll</DropdownItem>
+              <DropdownItem>Tax Online</DropdownItem>
+              <DropdownItem>Petty Cash</DropdownItem>
+              <DropdownItem>Cash Advance</DropdownItem>
+            </DropdownMenu>
+          </AppHeaderDropdown>
+          <NavItem>
+            <NavLink href="#" className="px-3"><i className="icon-layers"></i> Directory</NavLink>
+          </NavItem>
+          <AppHeaderDropdown direction="down" className="px-3">
+            <DropdownToggle nav><i className="icon-flag"></i> Company</DropdownToggle>
+            <DropdownMenu left style={{ left: 'auto' }}>
+              <DropdownItem>Profile</DropdownItem>
+              <DropdownItem>Policy</DropdownItem>
+              <DropdownItem>Administration</DropdownItem>
+              <DropdownItem>Broadcast</DropdownItem>
+            </DropdownMenu>
+          </AppHeaderDropdown>
+          <AppHeaderDropdown direction="down" className="px-3">
+            <DropdownToggle nav><i className="icon-options"></i> Others</DropdownToggle>
+            <DropdownMenu left style={{ left: 'auto' }}>
+              <DropdownItem>Report</DropdownItem>
+              <DropdownItem>Testimonial</DropdownItem>
+              <DropdownItem>Helpdesk</DropdownItem>
+              <DropdownItem>Name Card</DropdownItem>
+            </DropdownMenu>
+          </AppHeaderDropdown>
         </Nav>
         <Nav className="ml-auto" navbar>
-          <NavItem className="d-md-down-none">
+          {/* <NavItem className="d-md-down-none">
             <NavLink href="#"><i className="icon-bell"></i><Badge pill color="danger">5</Badge></NavLink>
-          </NavItem>
-          <NavItem className="d-md-down-none">
+          </NavItem> */}
+          {/* <NavItem className="d-md-down-none">
             <NavLink href="#"><i className="icon-list"></i></NavLink>
           </NavItem>
           <NavItem className="d-md-down-none">
             <NavLink href="#"><i className="icon-location-pin"></i></NavLink>
-          </NavItem>
+          </NavItem> */}
           <AppHeaderDropdown direction="down">
             <DropdownToggle nav>
               <img src={'assets/img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com" />
             </DropdownToggle>
             <DropdownMenu right style={{ right: 'auto' }}>
+              <DropdownItem><i className="fa fa-user"></i> My Profile</DropdownItem>
+              <DropdownItem><i className="fa fa-wrench"></i> Account Settings</DropdownItem>
+              <DropdownItem><i className="fa fa-lock"></i> Logout</DropdownItem>
+            </DropdownMenu>
+            {/* <DropdownMenu right style={{ right: 'auto' }}>
               <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
               <DropdownItem><i className="fa fa-bell-o"></i> Updates<Badge color="info">42</Badge></DropdownItem>
               <DropdownItem><i className="fa fa-envelope-o"></i> Messages<Badge color="success">42</Badge></DropdownItem>
@@ -66,7 +118,7 @@ class DefaultHeader extends Component {
               <DropdownItem divider />
               <DropdownItem><i className="fa fa-shield"></i> Lock Account</DropdownItem>
               <DropdownItem><i className="fa fa-lock"></i> Logout</DropdownItem>
-            </DropdownMenu>
+            </DropdownMenu> */}
           </AppHeaderDropdown>
         </Nav>
         <AppAsideToggler className="d-md-down-none" />

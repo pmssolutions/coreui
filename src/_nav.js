@@ -1,6 +1,124 @@
 export default {
   items: [
     {
+      title: true,
+      name: 'EMPLOYEE'
+    },
+    {
+      name: 'Dashboard',
+      url: '/dashboard',
+      icon: 'icon-speedometer'
+    },
+    {
+      name: 'Personal Data',
+      url: '/employee/profile',
+      icon: 'icon-user',
+    },
+    {
+      name: 'Calendar',
+      url: '#',
+      icon: 'icon-calendar',
+      children: [
+        {
+          name: 'Leave',
+          url: '#',
+        },
+        {
+          name: 'Attendance',
+          url: '#',
+        },
+        {
+          name: 'Overtime',
+          url: '#',
+        },
+      ]
+    },
+    {
+      name: 'Financial',
+      url: '#',
+      icon: 'icon-wallet',
+      children: [
+        {
+          name: 'Claim',
+          url: '#',
+        },
+        {
+          name: 'Benefits',
+          url: '#',
+        },
+      ]
+    },
+    {
+      name: 'Others',
+      url: '#',
+      icon: 'icon-options',
+      children: [
+        {
+          name: 'Document',
+          url: '#',
+        },
+        {
+          name: 'Job Desc',
+          url: '#',
+        },
+        {
+          name: 'Testimonial',
+          url: '#',
+        },
+        {
+          name: 'Career',
+          url: '#',
+        },
+      ]
+    },
+    {
+      title: true,
+      name: 'COMPANY'
+    },
+    {
+      name: 'Directory',
+      url: '#',
+      icon: 'icon-layers',
+    },
+    {
+      name: 'Activity',
+      url: '#',
+      icon: 'icon-pin',
+    },
+    {
+      name: 'Profile',
+      url: '#',
+      icon: 'icon-people',
+    },
+    {
+      name: 'Policy',
+      url: '#',
+      icon: 'icon-list',
+    },
+    {
+      title: true,
+      name: 'GENERAL'
+    },
+    {
+      name: 'Task & Notifications',
+      url: '#',
+      icon: 'icon-bell',
+    },
+    {
+      name: 'Account Settings',
+      url: '#',
+      icon: 'icon-settings',
+    },
+    // {
+    //   name: 'Recruitment',
+    //   url: '#',
+    //   icon: 'icon-puzzle',
+    // },
+    {
+      title: true,
+      name: ''
+    },
+    {
       name: 'Dashboard',
       url: '/dashboard',
       icon: 'icon-speedometer',
